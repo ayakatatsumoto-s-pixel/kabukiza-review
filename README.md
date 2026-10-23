@@ -5,7 +5,6 @@ Houdini models rendered in Omniverse. Reference-photo comparisons with opacity, 
 - [v001](https://ayakatatsumoto-s-pixel.github.io/kabukiza-review/v001/)
 - [v002](https://ayakatatsumoto-s-pixel.github.io/kabukiza-review/v002/)
 - [v003](https://ayakatatsumoto-s-pixel.github.io/kabukiza-review/v003/)
-- [v007 evaluation](https://ayakatatsumoto-s-pixel.github.io/kabukiza-review/v007/evaluation.html)
 - [v007 feedback](https://ayakatatsumoto-s-pixel.github.io/kabukiza-review/v007/)
 
 Each version is a self-contained HTML. Camera matching and model quality remain under review.
