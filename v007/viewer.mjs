@@ -79,7 +79,15 @@ export class PartViewer{
  program(v,f){const gl=this.gl;const shader=(type,source)=>{const s=gl.createShader(type);gl.shaderSource(s,source);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s;};
   const p=gl.createProgram(),vs=shader(gl.VERTEX_SHADER,v),fs=shader(gl.FRAGMENT_SHADER,f);gl.attachShader(p,vs);gl.attachShader(p,fs);gl.linkProgram(p);if(!gl.getProgramParameter(p,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(p));gl.deleteShader(vs);gl.deleteShader(fs);return p;}
  uniform(p,n){return this.gl.getUniformLocation(p,n);}
- async data(url,type=Float32Array){const r=await fetch(url);if(!r.ok)throw Error('モデルデータを読み込めません: '+url);const bytes=url.endsWith('.gz')?await new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer():await r.arrayBuffer();return new type(bytes);}
+ async data(url,type=Float32Array){
+  const pack=this.scene?.asset_pack,name=url.split('/').pop(),entry=pack?.entries?.[name];
+  if(entry){
+   if(!this.packPromise)this.packPromise=(async()=>{const r=await fetch('assets/'+pack.file);if(!r.ok)throw Error('圧縮モデルデータを読み込めません');const bytes=await new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();if(bytes.byteLength!==pack.bytes)throw Error('圧縮モデルデータの容量が一致しません');return bytes;})();
+   const bytes=await this.packPromise;
+   return new type(bytes.slice(entry[0],entry[0]+entry[1]));
+  }
+  const r=await fetch(url);if(!r.ok)throw Error('モデルデータを読み込めません: '+url);return new type(await r.arrayBuffer());
+ }
  buffer(data,target){const gl=this.gl,b=gl.createBuffer();gl.bindBuffer(target,b);gl.bufferData(target,data,gl.STATIC_DRAW);return b;}
  attribute(i,size,stride,offset,divisor=0){const gl=this.gl;gl.enableVertexAttribArray(i);gl.vertexAttribPointer(i,size,gl.FLOAT,false,stride,offset);gl.vertexAttribDivisor(i,divisor);}
  async load(scene,base='assets/',progress=()=>{}){
@@ -92,7 +100,7 @@ export class PartViewer{
   await parallel(Object.entries(scene.prototypes),async([name,records])=>{const children=[];for(const p of records){const [v,ix]=await Promise.all([this.data(base+p.vertices),this.data(base+p.indices,Uint32Array)]);children.push({...p,v,ix,vbo:this.buffer(v,gl.ARRAY_BUFFER),ibo:this.buffer(ix,gl.ELEMENT_ARRAY_BUFFER)});}this.proto.set(name,children);});
   await parallel(scene.instance_batches,async(b,i)=>{const data=await this.data(base+b.data);const ibo=this.buffer(data,gl.ARRAY_BUFFER),children=[];for(const p of this.proto.get(b.prototype)){const vao=gl.createVertexArray();gl.bindVertexArray(vao);gl.bindBuffer(gl.ARRAY_BUFFER,p.vbo);this.attribute(0,3,24,0);this.attribute(1,3,24,12);gl.bindBuffer(gl.ARRAY_BUFFER,ibo);for(let j=0;j<4;j++)this.attribute(4+j,4,84,j*16,1);this.attribute(8,2,84,64,1);this.attribute(9,3,84,72,1);gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,p.ibo);children.push({...p,vao});}gl.bindVertexArray(null);const partNumbers=new Set();for(let j=0;j<b.count;j++)partNumbers.add(data[j*21+16]);this.batches[i]={...b,data,children,partNumbers};});
   this.instanceSets=await Promise.all(scene.instance_sets.map(async s=>({...s,sourceIDs:s.source_ids?await this.data(base+s.source_ids,Int32Array):null,partIDs:await this.data(base+s.part_ids,Uint32Array)})));
-  this.loaded=true;this.home('theater');this.resize();return this;
+  this.packPromise=null;this.loaded=true;this.home('theater');this.resize();return this;
  }
  makeTarget(w,h){const gl=this.gl,texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA8,w,h,0,gl.RGBA,gl.UNSIGNED_BYTE,null);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.NEAREST);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
   const depth=gl.createRenderbuffer();gl.bindRenderbuffer(gl.RENDERBUFFER,depth);gl.renderbufferStorage(gl.RENDERBUFFER,gl.DEPTH_COMPONENT32F,w,h);const fbo=gl.createFramebuffer();gl.bindFramebuffer(gl.FRAMEBUFFER,fbo);gl.framebufferTexture2D(gl.FRAMEBUFFER,gl.COLOR_ATTACHMENT0,gl.TEXTURE_2D,texture,0);gl.framebufferRenderbuffer(gl.FRAMEBUFFER,gl.DEPTH_ATTACHMENT,gl.RENDERBUFFER,depth);if(gl.checkFramebufferStatus(gl.FRAMEBUFFER)!==gl.FRAMEBUFFER_COMPLETE)throw Error('3D描画領域を作成できません。');gl.bindFramebuffer(gl.FRAMEBUFFER,null);return {fbo,texture,depth};}
