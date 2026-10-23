@@ -1,0 +1,932 @@
+[
+  {
+    "id": "camera_001",
+    "size": [
+      1363,
+      2048
+    ],
+    "view": "木挽町側の俯瞰・全体",
+    "photo": "assets/ref_camera_001_photo_dbfa922e39.jpg",
+    "render": "assets/ref_camera_001_render_fa0ebdfad5.webp",
+    "gray": "assets/ref_camera_001_gray_76eb4e3af9.webp",
+    "before": "assets/ref_camera_001_before_9bc6ab478f.webp",
+    "contour": "assets/ref_camera_001_contour_6ef82867cb.webp",
+    "points": [
+      {
+        "name": "lt",
+        "world": [
+          -35.885105353909864,
+          -8.77662101852471,
+          142.657
+        ],
+        "photo": [
+          448.7472677595628,
+          392.84363636363634
+        ],
+        "projected": [
+          437.2821806442842,
+          397.0648783916041
+        ],
+        "residual_px": 12.217491838327907,
+        "pre_plateau_world": [
+          -42.36180335390986,
+          -10.185884018524709,
+          138.0
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "rt",
+        "world": [
+          32.94792364609013,
+          -10.14515301852471,
+          142.657
+        ],
+        "photo": [
+          914.2527322404372,
+          98.67636363636363
+        ],
+        "projected": [
+          925.9803500259304,
+          90.35392024953194
+        ],
+        "residual_px": 14.380545290413524,
+        "pre_plateau_world": [
+          33.038196646090135,
+          -10.185884018524709,
+          138.0
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "lf",
+        "world": [
+          -35.885105353909864,
+          -8.77662101852471,
+          25.9209375
+        ],
+        "photo": [
+          391.0245901639344,
+          1215.7672727272727
+        ],
+        "projected": [
+          389.07078355414905,
+          1297.691466204089
+        ],
+        "residual_px": 81.94748829033915,
+        "pre_plateau_world": [
+          -42.36180335390986,
+          -10.185884018524709,
+          25.8
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "rf",
+        "world": [
+          32.94792364609013,
+          -10.14515301852471,
+          25.9209375
+        ],
+        "photo": [
+          1001.7677595628415,
+          1377.7454545454545
+        ],
+        "projected": [
+          991.2163745022918,
+          1325.5533664132804
+        ],
+        "residual_px": 53.24796512818706,
+        "pre_plateau_world": [
+          33.038196646090135,
+          -10.185884018524709,
+          25.8
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "rr",
+        "world": [
+          33.54491264609013,
+          25.179315981475288,
+          25.9209375
+        ],
+        "photo": [
+          1115.3510928961748,
+          1336.7854545454545
+        ],
+        "projected": [
+          1106.7690876029174,
+          1304.1989945906403
+        ],
+        "residual_px": 33.69759913169203,
+        "pre_plateau_world": [
+          33.038196646090135,
+          26.31411598147529,
+          25.8
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "lp",
+        "world": [
+          -8.384803353909865,
+          -42.58588401852471,
+          21.899215517241377
+        ],
+        "photo": [
+          284.8893442622951,
+          1383.330909090909
+        ],
+        "projected": [
+          283.8697631011189,
+          1386.3000690828849
+        ],
+        "residual_px": 3.139340185799467,
+        "pre_plateau_world": [
+          -8.961803353909865,
+          -42.635884018524706,
+          21.65
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "rp",
+        "world": [
+          19.827196646090137,
+          -43.40288401852471,
+          21.899215517241377
+        ],
+        "photo": [
+          586.5368852459017,
+          1444.770909090909
+        ],
+        "projected": [
+          582.9495754673245,
+          1424.6681111228947
+        ],
+        "residual_px": 20.42036428642438,
+        "pre_plateau_world": [
+          19.038196646090135,
+          -42.635884018524706,
+          21.65
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "pp",
+        "world": [
+          35.51563838669597,
+          -37.404601478099174,
+          18.415
+        ],
+        "photo": [
+          942.1830601092896,
+          1452.2181818181818
+        ],
+        "projected": [
+          882.8221973455956,
+          1505.7162326477792
+        ],
+        "residual_px": 79.9109095844635,
+        "pre_plateau_world": [
+          35.63819664609014,
+          -37.635884018524706,
+          17.7
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "entry",
+        "world": [
+          5.688196659088135,
+          -45.895294189453125,
+          9.27474594116211
+        ],
+        "photo": [
+          431.9890710382514,
+          1645.8472727272726
+        ],
+        "projected": [
+          369.03679639472364,
+          1629.096989418028
+        ],
+        "residual_px": 65.14261948781386,
+        "pre_plateau_world": [
+          5.038196646090135,
+          -47.635884018524706,
+          9.35
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point.",
+        "anchor_basis": "v005 actual karahafu front-center roof vertex; excludes newly modeled crest ornament; photo point unchanged, semantic correspondence still estimated"
+      }
+    ],
+    "focal": 27.72254753112793,
+    "limits": "タワー角、軒先、屋根の重なり。画面下の樹木は対応点にしない。 ／ Houdini手動カメラを固定。自動フィットなし。対応点残差は再計算。",
+    "ground_visible": true,
+    "omniverse": "assets/ov_20261023_camera_001.png",
+    "capture_model_sha256": "c31b99bc94d10f0bec376d472762875ebbba95399474bfe077dff9bf12762277"
+  },
+  {
+    "id": "camera_002",
+    "size": [
+      1000,
+      680
+    ],
+    "view": "木挽町側から正面斜角",
+    "photo": "assets/ref_camera_002_photo_1b256bf859.jpg",
+    "render": "assets/ref_camera_002_render_c9b542e109.webp",
+    "gray": "assets/ref_camera_002_gray_f4d5552fbc.webp",
+    "before": "assets/ref_camera_002_before_bc95c186a8.webp",
+    "contour": "assets/ref_camera_002_contour_99d8202663.webp",
+    "points": [
+      {
+        "name": "lp",
+        "world": [
+          -8.384803353909865,
+          -42.58588401852471,
+          21.899215517241377
+        ],
+        "photo": [
+          164.40677966101694,
+          335.76059850374065
+        ],
+        "projected": [
+          159.00121589050497,
+          315.5743566370646
+        ],
+        "residual_px": 20.897475454633646,
+        "pre_plateau_world": [
+          -8.961803353909865,
+          -42.635884018524706,
+          21.65
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "rp",
+        "world": [
+          19.827196646090137,
+          -43.40288401852471,
+          21.899215517241377
+        ],
+        "photo": [
+          416.9491525423729,
+          244.18952618453866
+        ],
+        "projected": [
+          416.3788697899068,
+          239.72603693750642
+        ],
+        "residual_px": 4.499773180520631,
+        "pre_plateau_world": [
+          19.038196646090135,
+          -42.635884018524706,
+          21.65
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "pp",
+        "world": [
+          35.51563838669597,
+          -37.404601478099174,
+          18.415
+        ],
+        "photo": [
+          701.6949152542373,
+          283.1920199501247
+        ],
+        "projected": [
+          684.927773274996,
+          265.5526096733342
+        ],
+        "residual_px": 24.336923492195577,
+        "pre_plateau_world": [
+          35.63819664609014,
+          -37.635884018524706,
+          17.7
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "entry",
+        "world": [
+          5.688196659088135,
+          -45.895294189453125,
+          9.27474594116211
+        ],
+        "photo": [
+          266.10169491525426,
+          456.15960099750623
+        ],
+        "projected": [
+          232.65329504216837,
+          451.4172649337179
+        ],
+        "residual_px": 33.78291292076158,
+        "pre_plateau_world": [
+          5.038196646090135,
+          -47.635884018524706,
+          9.35
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point.",
+        "anchor_basis": "v005 actual karahafu front-center roof vertex; excludes newly modeled crest ornament; photo point unchanged, semantic correspondence still estimated"
+      },
+      {
+        "name": "lb",
+        "world": [
+          -8.384803353909865,
+          -43.158198975118346,
+          9.762890322580645
+        ],
+        "photo": [
+          167.79661016949152,
+          464.6384039900249
+        ],
+        "projected": [
+          143.23317292471467,
+          463.3540055625253
+        ],
+        "residual_px": 24.59699430008988,
+        "pre_plateau_world": [
+          -8.961803353909865,
+          -43.33588401852471,
+          9.6
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "rb",
+        "world": [
+          19.827196646090137,
+          -43.984186355923086,
+          9.762890322580645
+        ],
+        "photo": [
+          432.2033898305085,
+          420.54862842892766
+        ],
+        "projected": [
+          410.94623719821993,
+          425.9417446035493
+        ],
+        "residual_px": 21.930623340556895,
+        "pre_plateau_world": [
+          19.038196646090135,
+          -43.33588401852471,
+          9.6
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "pb",
+        "world": [
+          35.51465259829763,
+          -37.67770189512045,
+          11.318545112781955
+        ],
+        "photo": [
+          708.4745762711865,
+          410.3740648379053
+        ],
+        "projected": [
+          691.7668833605593,
+          382.433175068344
+        ],
+        "residual_px": 32.555188887650424,
+        "pre_plateau_world": [
+          35.63819664609014,
+          -37.93588401852471,
+          9.55
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      }
+    ],
+    "focal": 33.1633415222168,
+    "limits": "破風、入口、柱の前後関係。街路樹で一部遮蔽。 ／ Houdini手動カメラを固定。自動フィットなし。対応点残差は再計算。",
+    "ground_visible": false,
+    "omniverse": "assets/ov_20261023_camera_002.png",
+    "capture_model_sha256": "c31b99bc94d10f0bec376d472762875ebbba95399474bfe077dff9bf12762277"
+  },
+  {
+    "id": "camera_003",
+    "size": [
+      2048,
+      1363
+    ],
+    "view": "正面",
+    "photo": "assets/ref_camera_003_photo_e78f262fd4.jpg",
+    "render": "assets/ref_camera_003_render_3b3202b5d7.webp",
+    "gray": "assets/ref_camera_003_gray_fe5e5c3ccb.webp",
+    "before": "assets/ref_camera_003_before_244e7956f5.webp",
+    "contour": "assets/ref_camera_003_contour_87b165cae4.webp",
+    "points": [
+      {
+        "name": "lp",
+        "world": [
+          -8.384803353909865,
+          -42.58588401852471,
+          21.899215517241377
+        ],
+        "photo": [
+          548.4474576271186,
+          395.3740458015267
+        ],
+        "projected": [
+          559.8137485809266,
+          387.43180585655836
+        ],
+        "residual_px": 13.866208760510812,
+        "pre_plateau_world": [
+          -8.961803353909865,
+          -42.635884018524706,
+          21.65
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "rp",
+        "world": [
+          19.827196646090137,
+          -43.40288401852471,
+          21.899215517241377
+        ],
+        "photo": [
+          1464.8406779661018,
+          391.9058524173028
+        ],
+        "projected": [
+          1449.2439744361404,
+          401.45733445181764
+        ],
+        "residual_px": 18.28901227669687,
+        "pre_plateau_world": [
+          19.038196646090135,
+          -42.635884018524706,
+          21.65
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "pp",
+        "world": [
+          35.51563838669597,
+          -37.404601478099174,
+          18.415
+        ],
+        "photo": [
+          1808.4881355932202,
+          589.5928753180661
+        ],
+        "projected": [
+          1816.9898419734945,
+          579.4198198249958
+        ],
+        "residual_px": 13.257830495276588,
+        "pre_plateau_world": [
+          35.63819664609014,
+          -37.635884018524706,
+          17.7
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "entry",
+        "world": [
+          5.688196659088135,
+          -45.895294189453125,
+          9.27474594116211
+        ],
+        "photo": [
+          1006.6440677966102,
+          763.0025445292621
+        ],
+        "projected": [
+          1013.54704460043,
+          763.8581914588888
+        ],
+        "residual_px": 6.955804800470881,
+        "pre_plateau_world": [
+          5.038196646090135,
+          -47.635884018524706,
+          9.35
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point.",
+        "anchor_basis": "v005 actual karahafu front-center roof vertex; excludes newly modeled crest ornament; photo point unchanged, semantic correspondence still estimated"
+      },
+      {
+        "name": "lb",
+        "world": [
+          -8.384803353909865,
+          -43.158198975118346,
+          9.762890322580645
+        ],
+        "photo": [
+          524.1491525423729,
+          756.0661577608142
+        ],
+        "projected": [
+          513.0331078784004,
+          761.795108976495
+        ],
+        "residual_px": 12.505492033625952,
+        "pre_plateau_world": [
+          -8.961803353909865,
+          -43.33588401852471,
+          9.6
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "rb",
+        "world": [
+          19.827196646090137,
+          -43.984186355923086,
+          9.762890322580645
+        ],
+        "photo": [
+          1499.5525423728814,
+          763.0025445292621
+        ],
+        "projected": [
+          1494.7917763622227,
+          767.7327920363346
+        ],
+        "residual_px": 6.711194713790424,
+        "pre_plateau_world": [
+          19.038196646090135,
+          -43.33588401852471,
+          9.6
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      }
+    ],
+    "focal": 23.103376388549805,
+    "limits": "柱列、窓角、軒と破風。上部タワーは画面外。 ／ Houdini手動カメラを固定。自動フィットなし。対応点残差は再計算。",
+    "ground_visible": true,
+    "omniverse": "assets/ov_20261023_camera_003.png",
+    "capture_model_sha256": "c31b99bc94d10f0bec376d472762875ebbba95399474bfe077dff9bf12762277"
+  },
+  {
+    "id": "camera_004",
+    "size": [
+      1024,
+      1365
+    ],
+    "view": "昭和通り側のタワー",
+    "photo": "assets/ref_camera_004_photo_01ce8d1208.jpg",
+    "render": "assets/ref_camera_004_render_5a852ce047.webp",
+    "gray": "assets/ref_camera_004_gray_26e605d809.webp",
+    "before": "assets/ref_camera_004_before_2e93d84b88.webp",
+    "contour": "assets/ref_camera_004_contour_db06866476.webp",
+    "points": [
+      {
+        "name": "nwtop",
+        "world": [
+          -40.926109353909865,
+          22.419728981475288,
+          142.657
+        ],
+        "photo": [
+          240.39729119638827,
+          196.65254237288136
+        ],
+        "projected": [
+          241.65956995846358,
+          198.65543576762573
+        ],
+        "residual_px": 2.367473257271776,
+        "pre_plateau_world": [
+          -42.36180335390986,
+          26.31411598147529,
+          138.0
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "lt",
+        "world": [
+          -35.885105353909864,
+          -8.77662101852471,
+          142.657
+        ],
+        "photo": [
+          383.71106094808124,
+          92.54237288135593
+        ],
+        "projected": [
+          399.29640862081163,
+          86.7155153055186
+        ],
+        "residual_px": 16.638970259273126,
+        "pre_plateau_world": [
+          -42.36180335390986,
+          -10.185884018524709,
+          138.0
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "rt",
+        "world": [
+          32.94792364609013,
+          -10.14515301852471,
+          142.657
+        ],
+        "photo": [
+          755.8645598194131,
+          289.1949152542373
+        ],
+        "projected": [
+          760.887717062498,
+          292.9154890705082
+        ],
+        "residual_px": 6.250982179712041,
+        "pre_plateau_world": [
+          33.038196646090135,
+          -10.185884018524709,
+          138.0
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      }
+    ],
+    "focal": 37.78570556640625,
+    "limits": "上端、縦材、角。手前の別建物で低層部が遮蔽。 ／ Houdini手動カメラを固定。自動フィットなし。対応点残差は再計算。",
+    "ground_visible": true,
+    "omniverse": "assets/ov_20261023_camera_004.png",
+    "capture_model_sha256": "c31b99bc94d10f0bec376d472762875ebbba95399474bfe077dff9bf12762277"
+  },
+  {
+    "id": "camera_005",
+    "size": [
+      1200,
+      802
+    ],
+    "view": "昭和通り側の低層部",
+    "photo": "assets/ref_camera_005_photo_09cd2d7a0f.jpg",
+    "render": "assets/ref_camera_005_render_41cc90c01d.webp",
+    "gray": "assets/ref_camera_005_gray_d564f28c8e.webp",
+    "before": "assets/ref_camera_005_before_d41401b6de.webp",
+    "contour": "assets/ref_camera_005_contour_65c0ee1db4.webp",
+    "points": [
+      {
+        "name": "west_back_low",
+        "world": [
+          -41.01992266330934,
+          22.40286601860218,
+          7.33421875
+        ],
+        "photo": [
+          459.66101694915255,
+          553.6649746192893
+        ],
+        "projected": [
+          463.0843029400158,
+          554.6804950868849
+        ],
+        "residual_px": 3.570737850269332,
+        "pre_plateau_world": [
+          -42.461803353909865,
+          26.31411598147529,
+          7.3
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "west_front_low",
+        "world": [
+          -35.976395843299784,
+          -8.77480598934699,
+          7.33421875
+        ],
+        "photo": [
+          949.8305084745762,
+          559.7715736040609
+        ],
+        "projected": [
+          918.1987301171857,
+          595.2465559233035
+        ],
+        "residual_px": 47.529399034720065,
+        "pre_plateau_world": [
+          -42.461803353909865,
+          -10.185884018524709,
+          7.3
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "park_back_top",
+        "world": [
+          -41.86975154140987,
+          31.531688843544263,
+          15.633
+        ],
+        "photo": [
+          272.54237288135596,
+          356.2182741116751
+        ],
+        "projected": [
+          281.0959296009717,
+          353.158028798248
+        ],
+        "residual_px": 9.08451616400326,
+        "pre_plateau_world": [
+          -42.061803353909866,
+          41.41411598147529,
+          14.95
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "park_front_top",
+        "world": [
+          -41.86975154140987,
+          22.41972898147529,
+          15.633
+        ],
+        "photo": [
+          459.66101694915255,
+          417.28426395939084
+        ],
+        "projected": [
+          473.84891092275694,
+          377.88872546674787
+        ],
+        "residual_px": 41.872482473953625,
+        "pre_plateau_world": [
+          -42.061803353909866,
+          27.41411598147529,
+          14.95
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      }
+    ],
+    "focal": 37.836124420166016,
+    "limits": "ガラス面、柱、入口。西側全長を確定できない。 ／ Houdini手動カメラを固定。自動フィットなし。対応点残差は再計算。",
+    "ground_visible": false,
+    "omniverse": "assets/ov_20261023_camera_005_ground_hidden.png",
+    "capture_model_sha256": "c31b99bc94d10f0bec376d472762875ebbba95399474bfe077dff9bf12762277",
+    "capture_ground_hidden": true
+  },
+  {
+    "id": "camera_007",
+    "size": [
+      2048,
+      1365
+    ],
+    "view": "正面の近接",
+    "photo": "assets/ref_camera_007_photo_a024b5e79d.jpg",
+    "render": "assets/ref_camera_007_render_6430894969.webp",
+    "gray": "assets/ref_camera_007_gray_e11464164e.webp",
+    "before": "assets/ref_camera_007_before_fb409a4650.webp",
+    "contour": "assets/ref_camera_007_contour_6c2bece138.webp",
+    "points": [
+      {
+        "name": "lp",
+        "world": [
+          -8.384803353909865,
+          -42.58588401852471,
+          21.899215517241377
+        ],
+        "photo": [
+          280.576,
+          146.055
+        ],
+        "projected": [
+          311.81534343197006,
+          176.6873242195106
+        ],
+        "residual_px": 43.75198127113543,
+        "pre_plateau_world": [
+          -8.961803353909865,
+          -42.635884018524706,
+          21.65
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "rp",
+        "world": [
+          19.827196646090137,
+          -43.40288401852471,
+          21.899215517241377
+        ],
+        "photo": [
+          1740.8,
+          136.5
+        ],
+        "projected": [
+          1730.754467418974,
+          173.99975806888935
+        ],
+        "residual_px": 38.82196002344146,
+        "pre_plateau_world": [
+          19.038196646090135,
+          -42.635884018524706,
+          21.65
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "entry",
+        "world": [
+          5.688196659088135,
+          -45.895294189453125,
+          9.27474594116211
+        ],
+        "photo": [
+          1024.0,
+          713.895
+        ],
+        "projected": [
+          1026.6900557937686,
+          786.4914089882911
+        ],
+        "residual_px": 72.6462318236041,
+        "pre_plateau_world": [
+          5.038196646090135,
+          -47.635884018524706,
+          9.35
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point.",
+        "anchor_basis": "v005 actual karahafu front-center roof vertex; excludes newly modeled crest ornament; photo point unchanged, semantic correspondence still estimated"
+      },
+      {
+        "name": "ce",
+        "world": [
+          5.834196646090136,
+          -44.87120411289397,
+          15.763
+        ],
+        "photo": [
+          1024.0,
+          457.27500000000003
+        ],
+        "projected": [
+          1031.7219870098816,
+          453.6373944912746
+        ],
+        "residual_px": 8.535880576594838,
+        "pre_plateau_world": [
+          5.038196646090135,
+          -44.78588401852471,
+          15.5
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "lb",
+        "world": [
+          -8.384803353909865,
+          -43.158198975118346,
+          9.762890322580645
+        ],
+        "photo": [
+          286.72,
+          735.735
+        ],
+        "projected": [
+          284.73203013154057,
+          778.6366556829694
+        ],
+        "residual_px": 42.94769009548663,
+        "pre_plateau_world": [
+          -8.961803353909865,
+          -43.33588401852471,
+          9.6
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      },
+      {
+        "name": "rb",
+        "world": [
+          19.827196646090137,
+          -43.984186355923086,
+          9.762890322580645
+        ],
+        "photo": [
+          1720.32,
+          735.735
+        ],
+        "projected": [
+          1763.0604245845498,
+          774.5098160800605
+        ],
+        "residual_px": 57.708147221255615,
+        "pre_plateau_world": [
+          19.038196646090135,
+          -43.33588401852471,
+          9.6
+        ],
+        "method": "Previous photo landmark; model landmark transformed with same PLATEAU controls as mesh. Approximate semantic correspondence; not survey tie point."
+      }
+    ],
+    "focal": 50.96889877319336,
+    "limits": "唐破風と左右破風。左右端は画面外、のぼりと人は除外。 ／ Houdini手動カメラを固定。自動フィットなし。対応点残差は再計算。",
+    "ground_visible": true,
+    "omniverse": "assets/ov_20261023_camera_007.png",
+    "capture_model_sha256": "c31b99bc94d10f0bec376d472762875ebbba95399474bfe077dff9bf12762277"
+  }
+]

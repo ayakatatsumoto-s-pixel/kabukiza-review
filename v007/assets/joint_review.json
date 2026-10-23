@@ -1,0 +1,584 @@
+{
+  "schema": "kabukiza.joint-review.v1",
+  "model_sha256": "c31b99bc94d10f0bec376d472762875ebbba95399474bfe077dff9bf12762277",
+  "summary": "F工程：正面上部の曲線軒を KABUKIZA_front_eaves_flavor_v002 に基づいて再構成し、Omniverse共通環境でカメラ比較と入口の見え方を更新。C/D/Eの修正と既存の指摘を保持。",
+  "joints": [
+    {
+      "id": "FB01",
+      "label": "木挽町側の斜め棟",
+      "connected_parts": [
+        "TH_RF_PAVILION",
+        "TH_RF_TERMINALS"
+      ],
+      "bounds": [
+        [
+          27,
+          13,
+          14
+        ],
+        [
+          43,
+          20,
+          36
+        ]
+      ],
+      "result": "前回の検証記録を保持。C工程ではこの項目の再判定はしていません。",
+      "unresolved": "以前の判定は履歴として保持しています。",
+      "status": "reference_limited",
+      "reference_ids": [
+        "01_modeling_drawings",
+        "SITE-012",
+        "DOC-012",
+        "DOC-026"
+      ],
+      "historical_record": {
+        "model_sha256": "cc88103d969570b1d0cdb834d909d787f748fc17074bf26542951973534d9b4e",
+        "status": "implemented",
+        "result": "旧棟を除去し、屋根と共通の制御から平行な棟を再生成。",
+        "unresolved": "必要な隅棟と端部接続を確認。"
+      }
+    },
+    {
+      "id": "FB02",
+      "label": "屋上設備と屋根",
+      "connected_parts": [
+        "TH_RF_PAVILION",
+        "TH_RF_SERVICE"
+      ],
+      "bounds": [
+        [
+          28,
+          13,
+          20
+        ],
+        [
+          36,
+          20,
+          34
+        ]
+      ],
+      "result": "前回の検証記録を保持。C工程ではこの項目の再判定はしていません。",
+      "unresolved": "以前の判定は履歴として保持しています。",
+      "status": "reference_limited",
+      "reference_ids": [
+        "01_modeling_drawings",
+        "SITE-012",
+        "DOC-012",
+        "DOC-026"
+      ],
+      "historical_record": {
+        "model_sha256": "cc88103d969570b1d0cdb834d909d787f748fc17074bf26542951973534d9b4e",
+        "status": "implemented",
+        "result": "設備床の範囲に合わせ屋根と軒裏を再構成。",
+        "unresolved": "設備・支持台・床・屋根の接続を確認。"
+      }
+    },
+    {
+      "id": "FB03",
+      "label": "庭園側屋根の変形",
+      "connected_parts": [
+        "TH_GD_FITTINGS"
+      ],
+      "bounds": [
+        [
+          19,
+          15,
+          18
+        ],
+        [
+          29,
+          23,
+          31
+        ]
+      ],
+      "result": "前回の検証記録を保持。C工程ではこの項目の再判定はしていません。",
+      "unresolved": "以前の判定は履歴として保持しています。",
+      "status": "reference_limited",
+      "reference_ids": [
+        "01_modeling_drawings",
+        "SITE-012",
+        "DOC-012",
+        "DOC-026"
+      ],
+      "historical_record": {
+        "model_sha256": "cc88103d969570b1d0cdb834d909d787f748fc17074bf26542951973534d9b4e",
+        "status": "implemented",
+        "result": "境界吸着と補正の重なりを除き屋根面を再構築。",
+        "unresolved": "隣接屋根との継ぎ目と曲率は未確認。"
+      }
+    },
+    {
+      "id": "FB04",
+      "label": "右1F ガラス庇端部",
+      "connected_parts": [
+        "TH_FC_GLASS",
+        "TH_RF_LOWER",
+        "TH_RF_JUNCTION"
+      ],
+      "bounds": [
+        [
+          28,
+          2,
+          32
+        ],
+        [
+          42,
+          7,
+          46
+        ]
+      ],
+      "result": "前回の検証記録を保持。C工程ではこの項目の再判定はしていません。",
+      "unresolved": "以前の判定は履歴として保持しています。",
+      "status": "reference_limited",
+      "reference_ids": [
+        "01_modeling_drawings",
+        "SITE-012",
+        "DOC-012",
+        "DOC-026"
+      ],
+      "historical_record": {
+        "model_sha256": "cc88103d969570b1d0cdb834d909d787f748fc17074bf26542951973534d9b4e",
+        "status": "implemented",
+        "result": "ガラス範囲から離れた旧端部材を除去。",
+        "unresolved": "庇全体と瓦屋根の隙間・貫通を確認。"
+      }
+    },
+    {
+      "id": "FB05",
+      "label": "右1F 軒下と垂木",
+      "connected_parts": [
+        "TH_FC_SOFFITS",
+        "TH_FC_EAVES",
+        "TH_RF_LOWER"
+      ],
+      "bounds": [
+        [
+          12,
+          2,
+          33
+        ],
+        [
+          31,
+          7,
+          47
+        ]
+      ],
+      "result": "前回の検証記録を保持。C工程ではこの項目の再判定はしていません。",
+      "unresolved": "以前の判定は履歴として保持しています。",
+      "status": "reference_limited",
+      "reference_ids": [
+        "01_modeling_drawings",
+        "SITE-012",
+        "DOC-012",
+        "DOC-026"
+      ],
+      "historical_record": {
+        "model_sha256": "cc88103d969570b1d0cdb834d909d787f748fc17074bf26542951973534d9b4e",
+        "status": "implemented",
+        "result": "旧側端材を除去し現屋根断面から再生成。",
+        "unresolved": "垂木先端・支持位置・角の終端の全面確認は未完了。"
+      }
+    },
+    {
+      "id": "FB06",
+      "label": "5連窓の奥壁と付柱",
+      "connected_parts": [
+        "TH_FC_COLUMNS",
+        "TH_FC_BRACKETS",
+        "TH_FC_WALLS"
+      ],
+      "bounds": [
+        [
+          -18.260372161865234,
+          0.0,
+          -45.814117431640625
+        ],
+        [
+          42.2720947265625,
+          25.06999969482422,
+          46.58588409423828
+        ]
+      ],
+      "result": "4本の壁付柱、後退壁、5窓を共通座標で再構成。5窓の白枠2.00×2.15m、ガラス20面の開口を検証。",
+      "unresolved": "U-01/U-03/U-05：厚さと隠れた断面・支持形状は写真推定と既存断面を用いた作業仮定。",
+      "status": "validated",
+      "reference_ids": [
+        "A/B completed_baseline",
+        "B_entrance_controls",
+        "DOC-022",
+        "SITE-004/006/007/009"
+      ],
+      "historical_record": {
+        "model_sha256": "cc88103d969570b1d0cdb834d909d787f748fc17074bf26542951973534d9b4e",
+        "status": "implemented",
+        "result": "壁付き柱を奥壁へ移動。内側2本を770mmとし柱頭・組物を追従。",
+        "unresolved": "全4本の接触と梁・組物の連続を確認。奥行は写真推定。"
+      },
+      "dimensions": "柱芯X=-5.3625/-1.7875/1.7875/5.3625m、後退2.20m。窓下端GL+10.00m、上端+12.15m。"
+    },
+    {
+      "id": "FB07",
+      "label": "コの字部分の上部屋根",
+      "connected_parts": [
+        "TH_RF_MAIN_FRONT",
+        "TH_FC_SOFFITS"
+      ],
+      "bounds": [
+        [
+          -18.011802673339844,
+          3.857257843017578,
+          -46.284114837646484
+        ],
+        [
+          43.10608673095703,
+          22.184999465942383,
+          46.48588562011719
+        ]
+      ],
+      "result": "後退壁・柱頭・組物から既存上部屋根までを接続。連続支持材の上面を屋根裏面へ一致させ、内部重複面を除去。",
+      "unresolved": "U-01/U-03/U-05：厚さと隠れた断面・支持形状は写真推定と既存断面を用いた作業仮定。",
+      "status": "validated",
+      "reference_ids": [
+        "A/B completed_baseline",
+        "B_entrance_controls",
+        "DOC-022",
+        "SITE-004/006/007/009"
+      ],
+      "historical_record": {
+        "model_sha256": "cc88103d969570b1d0cdb834d909d787f748fc17074bf26542951973534d9b4e",
+        "status": "implemented",
+        "result": "同じ実座標位置での曲面補間へ変更。",
+        "unresolved": "屋根全体の実物との一致は未判定。"
+      },
+      "dimensions": "後退壁Y=-30.10m。支持材厚0.18mは作業断面。"
+    },
+    {
+      "id": "FB08",
+      "label": "左1F 扉左側の不要窓",
+      "connected_parts": [
+        "TH_FC_WALLS",
+        "TH_FC_GLASS",
+        "TH_EN_TICKET"
+      ],
+      "bounds": [
+        [
+          -15,
+          0,
+          39
+        ],
+        [
+          0,
+          6,
+          47
+        ]
+      ],
+      "result": "前回の検証記録を保持。C工程ではこの項目の再判定はしていません。",
+      "unresolved": "以前の判定は履歴として保持しています。",
+      "status": "reference_limited",
+      "reference_ids": [
+        "01_modeling_drawings",
+        "SITE-012",
+        "DOC-012",
+        "DOC-026"
+      ],
+      "historical_record": {
+        "model_sha256": "cc88103d969570b1d0cdb834d909d787f748fc17074bf26542951973534d9b4e",
+        "status": "implemented",
+        "result": "不要ガラス・専用枠を除去し、扉開口のみの壁へ再構築。",
+        "unresolved": "切符売場の窓口・扉・柱が保持されていることを確認。"
+      }
+    },
+    {
+      "id": "FB09",
+      "label": "入口の柱と簡易装飾",
+      "connected_parts": [
+        "TH_EN_COLUMNS",
+        "TH_EN_REAR_COLUMNS",
+        "TH_EN_CEILING",
+        "TH_EN_DOORS",
+        "TH_EN_ROOF",
+        "TH_EN_BEARING",
+        "TH_EN_FLOOR"
+      ],
+      "bounds": [
+        [
+          -3.432889938354492,
+          0.7850000262260437,
+          39.4093017578125
+        ],
+        [
+          14.588881492614746,
+          9.910699844360352,
+          44.60015106201172
+        ]
+      ],
+      "result": "前列4柱と後列4付柱、柱頭、梁、天井、3組の扉、唐破風と入口床を一体修正。唐破風支持面の裏板への接触を数値検証。",
+      "unresolved": "U-01/U-03/U-05：厚さと隠れた断面・支持形状は写真推定と既存断面を用いた作業仮定。",
+      "status": "validated",
+      "reference_ids": [
+        "A/B completed_baseline",
+        "B_entrance_controls",
+        "DOC-022",
+        "SITE-004/006/007/009"
+      ],
+      "historical_record": {
+        "model_sha256": "cc88103d969570b1d0cdb834d909d787f748fc17074bf26542951973534d9b4e",
+        "status": "implemented",
+        "result": "前方柱径675/610/610/675mm。唐破風装飾を交換用簡易形状へ変更。",
+        "unresolved": "装飾は仮形状。彫刻の細部は評価対象外。"
+      },
+      "dimensions": "入口奥行2.10m、採用床GL+0.50m、扉外枠2.34×3.60m。"
+    },
+    {
+      "id": "C-GROUND",
+      "label": "入口床と前庭の接続",
+      "status": "validated",
+      "connected_parts": [
+        "TH_EN_FLOOR",
+        "ST_PAVING",
+        "ST_BASE"
+      ],
+      "bounds": [
+        [
+          -5,
+          0,
+          38
+        ],
+        [
+          16,
+          2,
+          49
+        ]
+      ],
+      "reference_ids": [
+        "A_common_frame",
+        "ENT-040",
+        "U-20"
+      ],
+      "result": "入口床に前庭勾配を接続。床下の舗装を分離し面重複を解消。敷地7267メッシュを保存後に再検証。",
+      "dimensions": "採用床GL+0.50m。前庭GL+0.30〜0.50m、床下の舗装逃げ25mm。",
+      "unresolved": "U-20：外周境界と勾配は未実測。U-21：1FL+0.24m案は未採用。"
+    },
+    {
+      "id": "D-ROOF",
+      "label": "主屋根の断面と谷",
+      "status": "validated",
+      "connected_parts": [
+        "TH_RF_MAIN_FRONT",
+        "TH_RF_MAIN_REAR",
+        "TH_RF_GABLE",
+        "TH_RF_RIDGE"
+      ],
+      "bounds": [
+        [
+          -17.711803436279297,
+          15.00967025756836,
+          -6.525332450866699
+        ],
+        [
+          41.935359954833984,
+          22.14621353149414,
+          45.72209548950195
+        ]
+      ],
+      "reference_ids": [
+        "A/B completed_baseline",
+        "B_adopted_profile_points",
+        "B_roof_lines",
+        "F-207"
+      ],
+      "result": "三次断面へ修正し、5断面の交差検証で全断面の誤差改善を確認。局所補間なし、勾配反転0。保存USDの主屋根は境界・非多様体・面向き不整合・退化面0。点群上包絡線398点とのRMSE 0.09070m、最大0.45052mは誤差ゼロや測量合格を意味しない。",
+      "dimensions": "棟X=±14.25m、上端GL21.38m、中央軒先Y=-33.55m/Z=15.15m。",
+      "unresolved": "最大断面差0.45052mを保持。元点群は仕上げ・端部を未分類で、裸の屋根面とは断定できない。U-03/U-09/U-10/U-17の作業仮定を継承。瓦・装飾の復元は今回の対象外。"
+    },
+    {
+      "id": "D-SUPPORT",
+      "label": "屋根下面と壁・支持部",
+      "status": "validated",
+      "connected_parts": [
+        "TH_FC_WALLS",
+        "TH_FC_BEAMS",
+        "TH_FC_BRACKETS"
+      ],
+      "bounds": [
+        [
+          -18.260372161865234,
+          0.0,
+          -45.814117431640625
+        ],
+        [
+          42.2720947265625,
+          25.06999969482422,
+          46.58588409423828
+        ]
+      ],
+      "reference_ids": [
+        "A/B completed_baseline",
+        "B_adopted_profile_points",
+        "B_roof_lines",
+        "F-207"
+      ],
+      "result": "支持梁・壁上端・12座面を実際の屋根三角形に合わせて再構成。面内部の接触と各部材の閉鎖性を検証。",
+      "dimensions": "屋根厚0.24m、連続支持材厚0.18mは継承した作業断面。",
+      "unresolved": "U-03/U-09/U-10/U-17：下面・厚み・背面遷移・隠れた納まりは作業仮定。最終品質は人間が評価。"
+    },
+    {
+      "id": "D-SIDE",
+      "label": "木挽町側の屋根高さと段替わり",
+      "status": "validated",
+      "connected_parts": [
+        "TH_RF_LOWER",
+        "TH_RF_UPPER108",
+        "TH_RF_TERMINALS",
+        "TH_RF_GABLE"
+      ],
+      "bounds": [
+        [
+          -18.011802673339844,
+          4.664697170257568,
+          -45.78633117675781
+        ],
+        [
+          43.19017028808594,
+          22.565000534057617,
+          45.26173782348633
+        ]
+      ],
+      "reference_ids": [
+        "A/B completed_baseline",
+        "B_adopted_profile_points",
+        "B_roof_lines",
+        "F-207"
+      ],
+      "result": "中段・上段の高さ、段替わり位置と関連部材への反映を保存USDで確認。",
+      "dimensions": "中段上端GL20.50m、上段23.40m。段替わりY=-5.20m/15.60m。",
+      "unresolved": "U-03/U-09/U-10/U-17：下面・厚み・背面遷移・隠れた納まりは作業仮定。最終品質は人間が評価。"
+    },
+    {
+      "id": "E-LOWER",
+      "label": "１F下屋・隅の折返し",
+      "status": "validated",
+      "connected_parts": [
+        "TH_RF_LOWER",
+        "TH_FC_EAVES"
+      ],
+      "bounds": [
+        [
+          -18.403133392333984,
+          3.380000114440918,
+          -45.76192092895508
+        ],
+        [
+          43.33211898803711,
+          20.885000228881836,
+          48.34810256958008
+        ]
+      ],
+      "reference_ids": [
+        "A/B completed_baseline",
+        "GEO-005",
+        "SITE-012",
+        "SITE-014",
+        "SITE-016",
+        "USR-017"
+      ],
+      "result": "点群417点から左右の下屋面を適合。軒先はGL約3.99m。看板上の別庇はY=-38.45m・GL3.60m。異なる対象の高さを混同しない。",
+      "unresolved": "U-03/U-09：屋根厚0.18mと裏板0.045mは作業仮定。"
+    },
+    {
+      "id": "E-SOFFIT",
+      "label": "１F軒下と支持部",
+      "status": "validated",
+      "connected_parts": [
+        "TH_FC_SOFFITS",
+        "TH_FC_COLUMNS",
+        "TH_FC_BRACKETS",
+        "TH_FC_BEAMS"
+      ],
+      "bounds": [
+        [
+          -18.37154197692871,
+          -0.009999999776482582,
+          -46.284114837646484
+        ],
+        [
+          43.219879150390625,
+          23.584999084472656,
+          45.94316864013672
+        ]
+      ],
+      "reference_ids": [
+        "A/B completed_baseline",
+        "GEO-005",
+        "SITE-012",
+        "SITE-014",
+        "SITE-016",
+        "USR-017"
+      ],
+      "result": "平行垂木、隅木への突付け、連続した裏板・茅負・出桁、柱脚と柱頭を修正。250メッシュの閉鎖性と180部位の面内接触を検証。",
+      "unresolved": "U-02/U-04/U-05：垂木ピッチ0.31m、部材断面・支持部の奥行は写真推定。"
+    },
+    {
+      "id": "E-GROUND",
+      "label": "地面の盛り上がり・歩道の復元",
+      "status": "validated",
+      "connected_parts": [
+        "ST_BASE",
+        "ST_PAVING"
+      ],
+      "bounds": [
+        [
+          -42.419090270996094,
+          -0.20000000298023224,
+          -45.723358154296875
+        ],
+        [
+          42.419090270996094,
+          0.0,
+          50.209999084472656
+        ]
+      ],
+      "reference_ids": [
+        "A/B completed_baseline",
+        "GEO-005",
+        "SITE-012",
+        "SITE-014",
+        "SITE-016",
+        "USR-017"
+      ],
+      "result": "正面石畳の人工的な勾配・盛上がりを全撤去。石材7,263枚（うち公共歩道5,780枚）の上面は元のworld Y=0。目地下地1メッシュを含む舗装7,264メッシュの平面座標・形状構成を保持。前庭基礎も平面へ復元。保存USDとレビュー画面のSHA一致、正面・左右低視点で確認。",
+      "unresolved": "敷地境界と実地排水勾配は未実測。既存C工程の入口床上面world Y=0.885は変更していない。今回の補正で入口床高さが実測確定したとは扱わない。"
+    },
+    {
+      "id": "F-FRONT-EAVES",
+      "label": "正面上部の曲線軒と支持部",
+      "status": "validated_geometry_pending_visual_acceptance",
+      "connected_parts": [
+        "TH_RF_MAIN_FRONT",
+        "TH_RF_JUNCTION",
+        "TH_FC_SOFFITS",
+        "TH_FC_BRACKETS",
+        "TH_FC_BEAMS"
+      ],
+      "bounds": [
+        [
+          -18.37154197692871,
+          0.0,
+          -46.284114837646484
+        ],
+        [
+          43.219879150390625,
+          23.584999084472656,
+          45.94316864013672
+        ]
+      ],
+      "reference_ids": [
+        "KABUKIZA_front_eaves_flavor_v002"
+      ],
+      "result": "図面v002に基づき、曲線軒の本体・接合・軒裏・支持組物・梁を更新。357旧メッシュを退役、337新メッシュを追加。新規ソリッドの閉鎖性を検証。",
+      "unresolved": "C寸法と隠れた納まりは推定。DG-R、C-KM-IN、中央大斗は未確定として診断マーカーを保持。写真との対応点は旧版由来で、v007の誤差は未再測定。"
+    }
+  ],
+  "feedback": [],
+  "previous_model_sha256": "2d28bbda6f7e95898a4ab9eb0263b35db8619b27426a628d18fa203eaa38d5a2"
+}

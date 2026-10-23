@@ -1,0 +1,10 @@
+{
+  "source_model_sha256": "c31b99bc94d10f0bec376d472762875ebbba95399474bfe077dff9bf12762277",
+  "source_scene_sha256": "21b1395749301d7b223ac43717731de8e039d9d82162f9ee882081e1cadea1cf",
+  "geometry_files": 1777,
+  "compressed_geometry": {
+    "F23_c31b99bc94d1__geometry.vertices.bin": "F23_c31b99bc94d1__geometry.vertices.bin.gz"
+  },
+  "published_files": 1849,
+  "published_bytes": 164927499
+}

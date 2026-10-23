@@ -1,0 +1,201 @@
+{
+  "schema": "kabukiza.omniverse-captures.v1",
+  "captured_at": "2026-10-23",
+  "environment": "/cgroot/assets/dev/ai_assets/_env/building_check_template.usda",
+  "model_sha256": "c31b99bc94d10f0bec376d472762875ebbba95399474bfe077dff9bf12762277",
+  "camera_match": [
+    {
+      "id": "camera_001",
+      "label": "木挽町側の俯瞰・全体",
+      "photo": "assets/ref_camera_001_photo_dbfa922e39.jpg",
+      "image": "assets/ov_20261023_camera_001.png",
+      "size": [
+        1363,
+        2048
+      ]
+    },
+    {
+      "id": "camera_002",
+      "label": "木挽町側から正面斜角",
+      "photo": "assets/ref_camera_002_photo_1b256bf859.jpg",
+      "image": "assets/ov_20261023_camera_002.png",
+      "size": [
+        1000,
+        680
+      ]
+    },
+    {
+      "id": "camera_003",
+      "label": "正面",
+      "photo": "assets/ref_camera_003_photo_e78f262fd4.jpg",
+      "image": "assets/ov_20261023_camera_003.png",
+      "size": [
+        2048,
+        1363
+      ]
+    },
+    {
+      "id": "camera_004",
+      "label": "昭和通り側のタワー",
+      "photo": "assets/ref_camera_004_photo_01ce8d1208.jpg",
+      "image": "assets/ov_20261023_camera_004.png",
+      "size": [
+        1024,
+        1365
+      ]
+    },
+    {
+      "id": "camera_005",
+      "label": "昭和通り側の低層部",
+      "photo": "assets/ref_camera_005_photo_09cd2d7a0f.jpg",
+      "image": "assets/ov_20261023_camera_005_ground_hidden.png",
+      "size": [
+        1200,
+        802
+      ],
+      "capture_ground_hidden": true
+    },
+    {
+      "id": "camera_007",
+      "label": "正面の近接",
+      "photo": "assets/ref_camera_007_photo_a024b5e79d.jpg",
+      "image": "assets/ov_20261023_camera_007.png",
+      "size": [
+        2048,
+        1365
+      ]
+    }
+  ],
+  "feedback": [
+    {
+      "id": "review_front_full",
+      "label": "劇場正面・全体",
+      "image": "assets/ov_20261023_review_front_full.png"
+    },
+    {
+      "id": "review_entrance_oblique",
+      "label": "正面入口・軒",
+      "image": "assets/ov_20261023_review_entrance_oblique.png"
+    },
+    {
+      "id": "review_roof_junction",
+      "label": "屋根の接合",
+      "image": "assets/ov_20261023_review_roof_junction.png"
+    },
+    {
+      "id": "review_showa_side",
+      "label": "昭和通り側",
+      "image": "assets/ov_20261023_review_showa_side.png"
+    }
+  ],
+  "legacy_review": [
+    {
+      "id": "review_theater_side",
+      "label": "劇場側面",
+      "image": "assets/ov_20261023_review_theater_side.png"
+    },
+    {
+      "id": "review_theater_rear",
+      "label": "劇場背面",
+      "image": "assets/ov_20261023_review_theater_rear.png"
+    },
+    {
+      "id": "review_garden_overhead",
+      "label": "屋上庭園・俯瞰",
+      "image": "assets/ov_20261023_review_garden_overhead.png"
+    },
+    {
+      "id": "review_corner_close",
+      "label": "劇場角・近接",
+      "image": "assets/ov_20261023_review_corner_close.png"
+    },
+    {
+      "id": "review_front_full",
+      "label": "劇場正面・全体",
+      "image": "assets/ov_20261023_review_front_full.png"
+    },
+    {
+      "id": "review_showa_side",
+      "label": "昭和通り側",
+      "image": "assets/ov_20261023_review_showa_side.png"
+    },
+    {
+      "id": "review_kobikicho_side",
+      "label": "木挽町通り側",
+      "image": "assets/ov_20261023_review_kobikicho_side.png"
+    },
+    {
+      "id": "review_back_full",
+      "label": "背面全景",
+      "image": "assets/ov_20261023_review_back_full.png"
+    },
+    {
+      "id": "review_entrance_front",
+      "label": "正面入口・正対",
+      "image": "assets/ov_20261023_review_entrance_front.png"
+    },
+    {
+      "id": "review_entrance_oblique",
+      "label": "正面入口・斜め",
+      "image": "assets/ov_20261023_review_entrance_oblique.png"
+    },
+    {
+      "id": "review_stair_close",
+      "label": "五右衛門階段・近接",
+      "image": "assets/ov_20261023_review_stair_close.png"
+    },
+    {
+      "id": "review_stair_side",
+      "label": "五右衛門階段・側面",
+      "image": "assets/ov_20261023_review_stair_side.png"
+    },
+    {
+      "id": "review_roof_junction",
+      "label": "屋根の接合",
+      "image": "assets/ov_20261023_review_roof_junction.png"
+    },
+    {
+      "id": "review_junction_west",
+      "label": "西側の接合",
+      "image": "assets/ov_20261023_review_junction_west.png"
+    },
+    {
+      "id": "review_roof_overhead",
+      "label": "屋根・俯瞰",
+      "image": "assets/ov_20261023_review_roof_overhead.png"
+    },
+    {
+      "id": "review_stair_inside",
+      "label": "五右衛門階段・内部",
+      "image": "assets/ov_20261023_review_stair_inside.png"
+    },
+    {
+      "id": "review_entrance_ceiling",
+      "label": "入口天井",
+      "image": "assets/ov_20261023_review_entrance_ceiling.png"
+    },
+    {
+      "id": "review_parking",
+      "label": "駐車場入口",
+      "image": "assets/ov_20261023_review_parking.png"
+    },
+    {
+      "id": "review_tower_entry",
+      "label": "タワー入口",
+      "image": "assets/ov_20261023_review_tower_entry.png"
+    },
+    {
+      "id": "review_garden_path",
+      "label": "屋上庭園・通路",
+      "image": "assets/ov_20261023_review_garden_path.png"
+    },
+    {
+      "id": "review_kobikicho_ground",
+      "label": "木挽町通り側・地上",
+      "image": "assets/ov_20261023_review_kobikicho_ground.png"
+    }
+  ],
+  "ground_hidden_for_capture": [
+    "camera_005"
+  ]
+}
